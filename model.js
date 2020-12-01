@@ -1,5 +1,4 @@
 var log = require('logger')('lock');
-var utils = require('utils');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -19,7 +18,7 @@ lock.statics.acquire = function (name, done) {
         done(null, function (unlocked) {
             Lock.remove({
                 name: name
-            }, unlocked || utils.none);
+            }, unlocked || function () {});
         });
     });
 };
