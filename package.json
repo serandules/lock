@@ -8,8 +8,7 @@
     },
     "dependencies": {
         "mongoose": "5.1.8",
-        "logger": "serandules/logger#master",
-        "utils": "serandules/utils#master"
+        "logger": "serandules/logger#master"
     },
     "repository": {
         "type": "git",
